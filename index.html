@@ -15,6 +15,7 @@
         .value { font-size: 2.5em; font-weight: bold; margin: 10px 0; text-shadow: 0 0 10px rgba(244,255,0,0.5); }
         .log-box { margin-top: 30px; border: 1px solid #333; padding: 15px; background: #0a0a0a; height: 250px; overflow-y: auto; color: #00FF00; font-size: 0.9em; line-height: 1.5; }
         .log-highlight { color: #F4FF00; font-weight: bold; }
+        .log-success { color: #00FFFF; font-weight: bold; }
     </style>
 </head>
 <body>
@@ -26,32 +27,26 @@
         <div class="card">
             <h2>💰 Gains Récoltés</h2>
             <div class="value">0.00 $</div>
-            <small>En attente des premières validations...</small>
+            <small>Attente validation PR #57 (Scottcjn/trashclaw)</small>
         </div>
         <div class="card">
             <h2>🎯 Cibles Scannées</h2>
             <div class="value">2 996</div>
-            <small>Dernier scan : Il y a quelques secondes</small>
+            <small>Scan actuel : illbnm/homelab-stack ($100)</small>
         </div>
         <div class="card">
             <h2>💻 Pull Requests (Envoyées)</h2>
             <div class="value">1</div>
-            <small>En cours : Vague de 10 soumissions (Targeted)</small>
+            <small>PR #57 : Documentation Fix (TrashClaw)</small>
         </div>
     </div>
     <div class="log-box">
-        > [SYS] Initialisation de la Salle de Contrôle VIP... OK<br>
-        > [SYS] Connexion au Wallet 0x9e0EBB56aFf15D2053e93E009bd8D842D0841056... OK<br>
-        > [ACTION] OVERRIDE MANUEL PAR LUCAS S. : PASSAGE EN MODE LIVE.<br>
-        > [LIVE] Exécution de la séquence d attaque...<br>
-        > [LIVE] Fork du repository cible (Scottcjn/rustchain-bounties)... OK<br>
-        > [LIVE] Injection du code correctif (Fix typo & docs)... OK<br>
-        > [SUCCESS] Pull Request #1 envoyée ! (Bounty: 2 RTC).<br>
-        > <span class="log-highlight">[WARNING] Objectif non atteint : 0/10 PR aujourd hui.</span><br>
-        > <span class="log-highlight">[ACTION] Déclenchement de la phase "CARPET BOMBING" manuelle.</span><br>
-        > [LIVE] Nouveau Fork détecté : illbnm/homelab-stack... OK<br>
-        > [WORK] Analyse des cibles facile : Translation, Doc, Typos...<br>
-        > [WORK] Préparation des 9 prochaines Pull Requests...
+        > [LIVE] Fork du repository cible (Scottcjn/trashclaw)... OK<br>
+        > [LIVE] Modification de README.md (Ajout lien OpenClaw)... OK<br>
+        > <span class="log-success">[SUCCESS] Pull Request #57 envoyée avec succès !</span><br>
+        > [INFO] Cible suivante : illbnm/homelab-stack (Bounty $100)...<br>
+        > [WORK] Analyse de stacks/databases/docker-compose.yml...<br>
+        > [WORK] Écriture du script scripts/init-databases.sh... EN COURS
     </div>
 </body>
 </html>
