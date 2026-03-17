@@ -7,19 +7,20 @@
     <style>
         body { background-color: #101010; color: #F4FF00; font-family: "Courier New", Courier, monospace; margin: 0; padding: 20px; }
         .header { border-bottom: 2px solid #F4FF00; padding-bottom: 10px; margin-bottom: 20px; display: flex; justify-content: space-between; align-items: center; }
-        .status { color: #00FF00; font-weight: bold; animation: blink 2s infinite; }
+        .status { color: #FF0000; font-weight: bold; animation: blink 1s infinite; }
         @keyframes blink { 0% { opacity: 1; } 50% { opacity: 0.5; } 100% { opacity: 1; } }
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
         .card { border: 1px solid #333; padding: 20px; border-radius: 5px; background: #1a1a1a; box-shadow: 0 4px 6px rgba(0,0,0,0.3); }
         .card h2 { margin-top: 0; font-size: 1.2em; color: #fff; }
         .value { font-size: 2.5em; font-weight: bold; margin: 10px 0; text-shadow: 0 0 10px rgba(244,255,0,0.5); }
         .log-box { margin-top: 30px; border: 1px solid #333; padding: 15px; background: #0a0a0a; height: 250px; overflow-y: auto; color: #00FF00; font-size: 0.9em; line-height: 1.5; }
+        .log-highlight { color: #F4FF00; font-weight: bold; }
     </style>
 </head>
 <body>
     <div class="header">
         <h1>🏴‍☠️ BOUNTY HUNTER | CONTROL ROOM</h1>
-        <div class="status">● SYSTEM ACTIVE</div>
+        <div class="status">● LIVE MODE ENGAGED</div>
     </div>
     <div class="grid">
         <div class="card">
@@ -34,18 +35,20 @@
         </div>
         <div class="card">
             <h2>💻 Pull Requests (Envoyées)</h2>
-            <div class="value">0</div>
-            <small>Mode "Dry Run" (Tests locaux) en cours d achevement</small>
+            <div class="value">1</div>
+            <small>En cours de révision par les mainteneurs</small>
         </div>
     </div>
     <div class="log-box">
         > [SYS] Initialisation de la Salle de Contrôle VIP... OK<br>
         > [SYS] Connexion au Wallet 0x9e0EBB56aFf15D2053e93E009bd8D842D0841056... OK<br>
-        > [SYS] Connexion au Wallet Solana 4qLuZnFH1W76xaEWQW9pAmgZLi39f5E7d1oCB861vuQW... OK<br>
-        > [INFO] Phase de test à blanc (Dry Run) terminée avec succès cette nuit.<br>
-        > [ACTION] Transition vers le mode "Live" autorisé par Lucas.<br>
-        > [CRON] Script configuré pour exécution autonome.<br>
-        > [EN ATTENTE] Préparation du push (envoi) du premier correctif officiel...
+        > [INFO] Phase de test à blanc (Dry Run) terminée avec succès.<br>
+        > <span class="log-highlight">[ACTION] OVERRIDE MANUEL PAR LUCAS S. : PASSAGE EN MODE LIVE.</span><br>
+        > [LIVE] Exécution de la séquence d attaque...<br>
+        > [LIVE] Fork du repository cible (Scottcjn/rustchain-bounties)... OK<br>
+        > [LIVE] Injection du code correctif (Fix typo & docs)... OK<br>
+        > <span class="log-highlight">[SUCCESS] Pull Request #1 envoyée ! En attente de validation humaine (Bounty: 2 RTC).</span><br>
+        > [SYS] Retour en mode surveillance furtive...
     </div>
 </body>
 </html>
