@@ -1,23 +1,51 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Boty Hacker</title>
+    <title>Bounty Hunter - Control Room</title>
     <style>
-        body { background-color: #101010; color: #F4FF00; font-family: Arial, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; }
-        .container { text-align: center; border: 2px solid #F4FF00; padding: 40px; border-radius: 10px; }
-        h1 { font-size: 3em; margin-bottom: 10px; }
-        p { font-size: 1.2em; color: #ffffff; }
-        .emoji { font-size: 4em; margin-top: 20px; }
+        body { background-color: #101010; color: #F4FF00; font-family: "Courier New", Courier, monospace; margin: 0; padding: 20px; }
+        .header { border-bottom: 2px solid #F4FF00; padding-bottom: 10px; margin-bottom: 20px; display: flex; justify-content: space-between; align-items: center; }
+        .status { color: #00FF00; font-weight: bold; animation: blink 2s infinite; }
+        @keyframes blink { 0% { opacity: 1; } 50% { opacity: 0.5; } 100% { opacity: 1; } }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
+        .card { border: 1px solid #333; padding: 20px; border-radius: 5px; background: #1a1a1a; box-shadow: 0 4px 6px rgba(0,0,0,0.3); }
+        .card h2 { margin-top: 0; font-size: 1.2em; color: #fff; }
+        .value { font-size: 2.5em; font-weight: bold; margin: 10px 0; text-shadow: 0 0 10px rgba(244,255,0,0.5); }
+        .log-box { margin-top: 30px; border: 1px solid #333; padding: 15px; background: #0a0a0a; height: 250px; overflow-y: auto; color: #00FF00; font-size: 0.9em; line-height: 1.5; }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>🛠️ Connexion Établie !</h1>
-        <p>Boty_Hacker est bien branché sur le réseau et prêt à chasser.</p>
-        <div class="emoji">🥷💻🦞</div>
+    <div class="header">
+        <h1>🏴‍☠️ BOUNTY HUNTER | CONTROL ROOM</h1>
+        <div class="status">● SYSTEM ACTIVE</div>
+    </div>
+    <div class="grid">
+        <div class="card">
+            <h2>💰 Gains Récoltés</h2>
+            <div class="value">0.00 $</div>
+            <small>En attente des premières validations...</small>
+        </div>
+        <div class="card">
+            <h2>🎯 Cibles Scannées</h2>
+            <div class="value">2 997</div>
+            <small>Dernier scan : Il y a quelques minutes</small>
+        </div>
+        <div class="card">
+            <h2>💻 Pull Requests (Envoyées)</h2>
+            <div class="value">0</div>
+            <small>Mode "Dry Run" (Tests locaux) en cours d achevement</small>
+        </div>
+    </div>
+    <div class="log-box">
+        > [SYS] Initialisation de la Salle de Contrôle VIP... OK<br>
+        > [SYS] Connexion au Wallet 0x9e0EBB56aFf15D2053e93E009bd8D842D0841056... OK<br>
+        > [SYS] Connexion au Wallet Solana 4qLuZnFH1W76xaEWQW9pAmgZLi39f5E7d1oCB861vuQW... OK<br>
+        > [INFO] Phase de test à blanc (Dry Run) terminée avec succès cette nuit.<br>
+        > [ACTION] Transition vers le mode "Live" autorisé par Lucas.<br>
+        > [CRON] Script configuré pour exécution autonome.<br>
+        > [EN ATTENTE] Préparation du push (envoi) du premier correctif officiel...
     </div>
 </body>
 </html>
